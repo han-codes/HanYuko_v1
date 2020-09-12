@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A590B591250D815A00403020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B590250D815A00403020 /* AppDelegate.swift */; };
+		A590B593250D815A00403020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B592250D815A00403020 /* SceneDelegate.swift */; };
+		A590B595250D815A00403020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B594250D815A00403020 /* ViewController.swift */; };
+		A590B598250D815A00403020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590B596250D815A00403020 /* Main.storyboard */; };
+		A590B59A250D815B00403020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A590B599250D815B00403020 /* Assets.xcassets */; };
+		A590B59D250D815B00403020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590B59B250D815B00403020 /* LaunchScreen.storyboard */; };
+		A590B5A8250D815B00403020 /* HanYuko_v1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B5A7250D815B00403020 /* HanYuko_v1Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A590B5A4250D815B00403020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A590B585250D815A00403020 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A590B58C250D815A00403020;
+			remoteInfo = HanYuko_v1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A590B58D250D815A00403020 /* HanYuko_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanYuko_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A590B590250D815A00403020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A590B592250D815A00403020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A590B594250D815A00403020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A590B597250D815A00403020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A590B599250D815B00403020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A590B59C250D815B00403020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A590B59E250D815B00403020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A590B5A3250D815B00403020 /* HanYuko_v1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HanYuko_v1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A590B5A7250D815B00403020 /* HanYuko_v1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanYuko_v1Tests.swift; sourceTree = "<group>"; };
+		A590B5A9250D815B00403020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A590B58A250D815A00403020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A590B5A0250D815B00403020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A590B584250D815A00403020 = {
+			isa = PBXGroup;
+			children = (
+				A590B58F250D815A00403020 /* HanYuko_v1 */,
+				A590B5A6250D815B00403020 /* HanYuko_v1Tests */,
+				A590B58E250D815A00403020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A590B58E250D815A00403020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A590B58D250D815A00403020 /* HanYuko_v1.app */,
+				A590B5A3250D815B00403020 /* HanYuko_v1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A590B58F250D815A00403020 /* HanYuko_v1 */ = {
+			isa = PBXGroup;
+			children = (
+				A590B590250D815A00403020 /* AppDelegate.swift */,
+				A590B592250D815A00403020 /* SceneDelegate.swift */,
+				A590B594250D815A00403020 /* ViewController.swift */,
+				A590B596250D815A00403020 /* Main.storyboard */,
+				A590B599250D815B00403020 /* Assets.xcassets */,
+				A590B59B250D815B00403020 /* LaunchScreen.storyboard */,
+				A590B59E250D815B00403020 /* Info.plist */,
+			);
+			path = HanYuko_v1;
+			sourceTree = "<group>";
+		};
+		A590B5A6250D815B00403020 /* HanYuko_v1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A590B5A7250D815B00403020 /* HanYuko_v1Tests.swift */,
+				A590B5A9250D815B00403020 /* Info.plist */,
+			);
+			path = HanYuko_v1Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A590B58C250D815A00403020 /* HanYuko_v1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A590B5AC250D815B00403020 /* Build configuration list for PBXNativeTarget "HanYuko_v1" */;
+			buildPhases = (
+				A590B589250D815A00403020 /* Sources */,
+				A590B58A250D815A00403020 /* Frameworks */,
+				A590B58B250D815A00403020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HanYuko_v1;
+			productName = HanYuko_v1;
+			productReference = A590B58D250D815A00403020 /* HanYuko_v1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A590B5A2250D815B00403020 /* HanYuko_v1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A590B5AF250D815B00403020 /* Build configuration list for PBXNativeTarget "HanYuko_v1Tests" */;
+			buildPhases = (
+				A590B59F250D815B00403020 /* Sources */,
+				A590B5A0250D815B00403020 /* Frameworks */,
+				A590B5A1250D815B00403020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A590B5A5250D815B00403020 /* PBXTargetDependency */,
+			);
+			name = HanYuko_v1Tests;
+			productName = HanYuko_v1Tests;
+			productReference = A590B5A3250D815B00403020 /* HanYuko_v1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A590B585250D815A00403020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jacob Pernell";
+				TargetAttributes = {
+					A590B58C250D815A00403020 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A590B5A2250D815B00403020 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A590B58C250D815A00403020;
+					};
+				};
+			};
+			buildConfigurationList = A590B588250D815A00403020 /* Build configuration list for PBXProject "HanYuko_v1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A590B584250D815A00403020;
+			productRefGroup = A590B58E250D815A00403020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A590B58C250D815A00403020 /* HanYuko_v1 */,
+				A590B5A2250D815B00403020 /* HanYuko_v1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A590B58B250D815A00403020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A590B59D250D815B00403020 /* LaunchScreen.storyboard in Resources */,
+				A590B59A250D815B00403020 /* Assets.xcassets in Resources */,
+				A590B598250D815A00403020 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A590B5A1250D815B00403020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A590B589250D815A00403020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A590B595250D815A00403020 /* ViewController.swift in Sources */,
+				A590B591250D815A00403020 /* AppDelegate.swift in Sources */,
+				A590B593250D815A00403020 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A590B59F250D815B00403020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A590B5A8250D815B00403020 /* HanYuko_v1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A590B5A5250D815B00403020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A590B58C250D815A00403020 /* HanYuko_v1 */;
+			targetProxy = A590B5A4250D815B00403020 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A590B596250D815A00403020 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A590B597250D815A00403020 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A590B59B250D815B00403020 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A590B59C250D815B00403020 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A590B5AA250D815B00403020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A590B5AB250D815B00403020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A590B5AD250D815B00403020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 889DPPF4QB;
+				INFOPLIST_FILE = HanYuko_v1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobpernell.HanYuko-v1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A590B5AE250D815B00403020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 889DPPF4QB;
+				INFOPLIST_FILE = HanYuko_v1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobpernell.HanYuko-v1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A590B5B0250D815B00403020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 889DPPF4QB;
+				INFOPLIST_FILE = HanYuko_v1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobpernell.HanYuko-v1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HanYuko_v1.app/HanYuko_v1";
+			};
+			name = Debug;
+		};
+		A590B5B1250D815B00403020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 889DPPF4QB;
+				INFOPLIST_FILE = HanYuko_v1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobpernell.HanYuko-v1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HanYuko_v1.app/HanYuko_v1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A590B588250D815A00403020 /* Build configuration list for PBXProject "HanYuko_v1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A590B5AA250D815B00403020 /* Debug */,
+				A590B5AB250D815B00403020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A590B5AC250D815B00403020 /* Build configuration list for PBXNativeTarget "HanYuko_v1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A590B5AD250D815B00403020 /* Debug */,
+				A590B5AE250D815B00403020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A590B5AF250D815B00403020 /* Build configuration list for PBXNativeTarget "HanYuko_v1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A590B5B0250D815B00403020 /* Debug */,
+				A590B5B1250D815B00403020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A590B585250D815A00403020 /* Project object */;
+}
