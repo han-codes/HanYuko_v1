@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ABAC519DA615409732C61A2 /* Pods_HanYuko_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */; };
+		23C4B54953CF2E0A49BC2634 /* Pods_HanYuko_v2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */; };
 		A515514125101A8500D07A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515514025101A8500D07A82 /* AppDelegate.swift */; };
 		A515514325101A8500D07A82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515514225101A8500D07A82 /* SceneDelegate.swift */; };
 		A515514525101A8500D07A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515514425101A8500D07A82 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82E67FCB75FB81E9090AF891 /* Pods-HanYuko_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2.debug.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2.debug.xcconfig"; sourceTree = "<group>"; };
+		A488BAEE66AB6EDE376A0C86 /* Pods-HanYuko_v2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2Tests.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2Tests/Pods-HanYuko_v2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A515513D25101A8500D07A82 /* HanYuko_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanYuko_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A515514025101A8500D07A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A515514225101A8500D07A82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,10 @@
 		A515515925101A8700D07A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A515516225101BB700D07A82 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		A515516325101BB700D07A82 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		AA46BD9EAB8E489A3D32DB0D /* Pods-HanYuko_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2.release.xcconfig"; sourceTree = "<group>"; };
+		C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F523A09F1DB69483D141ECDF /* Pods-HanYuko_v2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2Tests.debug.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2Tests/Pods-HanYuko_v2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABAC519DA615409732C61A2 /* Pods_HanYuko_v2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +67,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C4B54953CF2E0A49BC2634 /* Pods_HanYuko_v2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33F8FE463F86992FEEBEEEBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82E67FCB75FB81E9090AF891 /* Pods-HanYuko_v2.debug.xcconfig */,
+				AA46BD9EAB8E489A3D32DB0D /* Pods-HanYuko_v2.release.xcconfig */,
+				F523A09F1DB69483D141ECDF /* Pods-HanYuko_v2Tests.debug.xcconfig */,
+				A488BAEE66AB6EDE376A0C86 /* Pods-HanYuko_v2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A515513425101A8500D07A82 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +93,8 @@
 				A515515625101A8700D07A82 /* HanYuko_v2Tests */,
 				A515513E25101A8500D07A82 /* Products */,
 				A515516825101BBD00D07A82 /* Fonts */,
+				33F8FE463F86992FEEBEEEBE /* Pods */,
+				F9049171C2CA2F36B1D6E489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +139,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F9049171C2CA2F36B1D6E489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */,
+				C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A515515C25101A8700D07A82 /* Build configuration list for PBXNativeTarget "HanYuko_v2" */;
 			buildPhases = (
+				56BAF2A465721420850E1024 /* [CP] Check Pods Manifest.lock */,
 				A515513925101A8500D07A82 /* Sources */,
 				A515513A25101A8500D07A82 /* Frameworks */,
 				A515513B25101A8500D07A82 /* Resources */,
+				1306FCE8A5711723EB0B8E1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +174,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A515515F25101A8700D07A82 /* Build configuration list for PBXNativeTarget "HanYuko_v2Tests" */;
 			buildPhases = (
+				E6CE979EE2CAC46BB13C58A2 /* [CP] Check Pods Manifest.lock */,
 				A515514F25101A8700D07A82 /* Sources */,
 				A515515025101A8700D07A82 /* Frameworks */,
 				A515515125101A8700D07A82 /* Resources */,
@@ -214,6 +250,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1306FCE8A5711723EB0B8E1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56BAF2A465721420850E1024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HanYuko_v2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6CE979EE2CAC46BB13C58A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HanYuko_v2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A515513925101A8500D07A82 /* Sources */ = {
@@ -380,6 +480,7 @@
 		};
 		A515515D25101A8700D07A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E67FCB75FB81E9090AF891 /* Pods-HanYuko_v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +499,7 @@
 		};
 		A515515E25101A8700D07A82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA46BD9EAB8E489A3D32DB0D /* Pods-HanYuko_v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -416,6 +518,7 @@
 		};
 		A515516025101A8700D07A82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F523A09F1DB69483D141ECDF /* Pods-HanYuko_v2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -438,6 +541,7 @@
 		};
 		A515516125101A8700D07A82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A488BAEE66AB6EDE376A0C86 /* Pods-HanYuko_v2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
