@@ -1,6 +1,0 @@
-framework module Pods_HanYuko_v1Tests {
-  umbrella header "Pods-HanYuko_v1Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
