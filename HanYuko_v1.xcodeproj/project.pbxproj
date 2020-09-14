@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		A5889066250F562600259AEB /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889064250F562600259AEB /* Rubik-Regular.ttf */; };
 		A5889067250F562600259AEB /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889064250F562600259AEB /* Rubik-Regular.ttf */; };
 		A5889068250F562600259AEB /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889065250F562600259AEB /* Rubik-Bold.ttf */; };
 		A5889069250F562600259AEB /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889065250F562600259AEB /* Rubik-Bold.ttf */; };
 =======
 >>>>>>> parent of 9edb666... [HYJP-004] Installed Alamofire cocoapod
+=======
+		0A86CAC99CF6933DE8FD227F /* Pods_HanYuko_v1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C6B7C4CD6B96109AFCF906 /* Pods_HanYuko_v1Tests.framework */; };
+		1D53F28C2D27481AFF75EDD4 /* Pods_HanYuko_v1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F74B960C8A11BE56D12EF2 /* Pods_HanYuko_v1.framework */; };
+>>>>>>> parent of 2e01e2d... Merge pull request #1 from JacobPernell/Interface
 		A590B591250D815A00403020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B590250D815A00403020 /* AppDelegate.swift */; };
 		A590B593250D815A00403020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B592250D815A00403020 /* SceneDelegate.swift */; };
 		A590B595250D815A00403020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B594250D815A00403020 /* ViewController.swift */; };
@@ -35,10 +40,17 @@
 
 /* Begin PBXFileReference section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		A5889064250F562600259AEB /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		A5889065250F562600259AEB /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 =======
 >>>>>>> parent of 9edb666... [HYJP-004] Installed Alamofire cocoapod
+=======
+		238062C0659267DDCB2E0BBF /* Pods-HanYuko_v1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v1Tests.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v1Tests/Pods-HanYuko_v1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		24F3324FF64ED6997819CFFA /* Pods-HanYuko_v1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v1Tests.debug.xcconfig"; path = "Target Support Files/Pods-HanYuko_v1Tests/Pods-HanYuko_v1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		80298BBC9BBF72F85CD65FDF /* Pods-HanYuko_v1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v1.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v1/Pods-HanYuko_v1.release.xcconfig"; sourceTree = "<group>"; };
+		94C6B7C4CD6B96109AFCF906 /* Pods_HanYuko_v1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> parent of 2e01e2d... Merge pull request #1 from JacobPernell/Interface
 		A590B58D250D815A00403020 /* HanYuko_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanYuko_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A590B590250D815A00403020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A590B592250D815A00403020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +83,7 @@
 
 /* Begin PBXGroup section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		A588906A250F562C00259AEB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +91,27 @@
 				A5889064250F562600259AEB /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
+=======
+		3BFD6EFEAEF540FE0EB28CFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F74B960C8A11BE56D12EF2 /* Pods_HanYuko_v1.framework */,
+				94C6B7C4CD6B96109AFCF906 /* Pods_HanYuko_v1Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63959C44628C436A46D42546 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF541F5D36BFE3060608DA24 /* Pods-HanYuko_v1.debug.xcconfig */,
+				80298BBC9BBF72F85CD65FDF /* Pods-HanYuko_v1.release.xcconfig */,
+				24F3324FF64ED6997819CFFA /* Pods-HanYuko_v1Tests.debug.xcconfig */,
+				238062C0659267DDCB2E0BBF /* Pods-HanYuko_v1Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+>>>>>>> parent of 2e01e2d... Merge pull request #1 from JacobPernell/Interface
 			sourceTree = "<group>";
 		};
 =======
@@ -89,9 +123,14 @@
 				A590B5A6250D815B00403020 /* HanYuko_v1Tests */,
 				A590B58E250D815A00403020 /* Products */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				A588906A250F562C00259AEB /* Fonts */,
 =======
 >>>>>>> parent of 9edb666... [HYJP-004] Installed Alamofire cocoapod
+=======
+				63959C44628C436A46D42546 /* Pods */,
+				3BFD6EFEAEF540FE0EB28CFC /* Frameworks */,
+>>>>>>> parent of 2e01e2d... Merge pull request #1 from JacobPernell/Interface
 			);
 			sourceTree = "<group>";
 		};
@@ -209,10 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A590B59D250D815B00403020 /* LaunchScreen.storyboard in Resources */,
-				A5889066250F562600259AEB /* Rubik-Regular.ttf in Resources */,
 				A590B59A250D815B00403020 /* Assets.xcassets in Resources */,
 				A590B598250D815A00403020 /* Main.storyboard in Resources */,
-				A5889068250F562600259AEB /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5889067250F562600259AEB /* Rubik-Regular.ttf in Resources */,
-				A5889069250F562600259AEB /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
