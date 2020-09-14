@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UITableViewController {
     
@@ -42,6 +43,16 @@ class ViewController: UITableViewController {
         
         // Adds search input to navigation area
         navigationItem.searchController = searchController
-        // Do any additional setup after loading the view.
+        
+        fetchImages()
     }
+    
+    func fetchImages() {
+        let request = AF.request("https://api.unsplash.com/")
+        
+        request.response { (data) in
+            debugPrint(data)
+        }
+    }
+    
 }
