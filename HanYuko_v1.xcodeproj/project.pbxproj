@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5889066250F562600259AEB /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889064250F562600259AEB /* Rubik-Regular.ttf */; };
+		A5889067250F562600259AEB /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889064250F562600259AEB /* Rubik-Regular.ttf */; };
+		A5889068250F562600259AEB /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889065250F562600259AEB /* Rubik-Bold.ttf */; };
+		A5889069250F562600259AEB /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5889065250F562600259AEB /* Rubik-Bold.ttf */; };
 		A590B591250D815A00403020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B590250D815A00403020 /* AppDelegate.swift */; };
 		A590B593250D815A00403020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B592250D815A00403020 /* SceneDelegate.swift */; };
 		A590B595250D815A00403020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590B594250D815A00403020 /* ViewController.swift */; };
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5889064250F562600259AEB /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		A5889065250F562600259AEB /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		A590B58D250D815A00403020 /* HanYuko_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanYuko_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A590B590250D815A00403020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A590B592250D815A00403020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,12 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A588906A250F562C00259AEB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A5889065250F562600259AEB /* Rubik-Bold.ttf */,
+				A5889064250F562600259AEB /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A590B584250D815A00403020 = {
 			isa = PBXGroup;
 			children = (
 				A590B58F250D815A00403020 /* HanYuko_v1 */,
 				A590B5A6250D815B00403020 /* HanYuko_v1Tests */,
 				A590B58E250D815A00403020 /* Products */,
+				A588906A250F562C00259AEB /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A590B59D250D815B00403020 /* LaunchScreen.storyboard in Resources */,
+				A5889066250F562600259AEB /* Rubik-Regular.ttf in Resources */,
 				A590B59A250D815B00403020 /* Assets.xcassets in Resources */,
 				A590B598250D815A00403020 /* Main.storyboard in Resources */,
+				A5889068250F562600259AEB /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5889067250F562600259AEB /* Rubik-Regular.ttf in Resources */,
+				A5889069250F562600259AEB /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
