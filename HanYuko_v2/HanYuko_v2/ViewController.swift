@@ -6,6 +6,11 @@
 //  Copyright © 2020 Jacob Pernell. All rights reserved.
 //
 
+// TODO: Make utility folder with Constants struct that contains all strings
+// TODO: Look up marks and todos
+
+// TODO: FUTURE: v2 of this - all programmatic UI, use SwiftyJSON
+
 import UIKit
 import Alamofire
 
@@ -44,15 +49,21 @@ class ViewController: UITableViewController {
         // Adds search input to navigation area
         navigationItem.searchController = searchController
         
-        fetchImages()
+        fetchImages(query: "office")
     }
     
-    func fetchImages() {
-        let request = AF.request("https://api.unsplash.com/")
+    func fetchImages(query: String) {
+        let apiKey = "4se24g0iDGD4ZlKTHoh1LVanuCy1CegUCH0_zZlV030"
+        let apiURL = "https://api.unsplash.com/search/photos?query=\(query)&client_id=\(apiKey)"
         
-        request.response { (data) in
-            debugPrint(data)
+        let request = AF.request(apiURL)
+        
+        request.responseJSON { (data) in
+            print(data)
+            // TODO: plug this data into the UnsplashImage struct
         }
     }
+    
+    // JUST DO IT
     
 }
