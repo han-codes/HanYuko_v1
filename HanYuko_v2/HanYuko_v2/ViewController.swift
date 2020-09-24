@@ -14,11 +14,9 @@
 import UIKit
 import Alamofire
 
-class ViewController: UITableViewController {
+class ViewController: UITableViewController, UISearchBarDelegate {
     
     var imagesStored = [UnsplashImage]()
-    
-    let searchController = UISearchController(searchResultsController: nil)
     
     // Font styling attributes
     let largeTitleFont = UIFont(name: "Rubik-Bold", size: 34) ?? UIFont(name: "Arial", size: 34)
@@ -48,10 +46,16 @@ class ViewController: UITableViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = largeTitleTextAttributes
         navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
         
+        // Search bar setup
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
         // Adds search input to navigation area
         navigationItem.searchController = searchController
         
-        fetchImages(query: "office")
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        fetchImages(query: searchBar.text ?? "")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,14 +77,10 @@ class ViewController: UITableViewController {
         AF.request(apiURL, parameters: parameters)
             .validate()
             .responseDecodable(of: ImagesResponse.self) { response in
-//                debugPrint(response)
+                //debugPrint(response)
                 guard let images = response.value else { return }
                 self.imagesStored = images.results
                 self.tableView.reloadData()
-                
-//                print(images.results[0].id ?? "BEEFY")
-//                print(images.results[0].description ?? "BEEFY")
-//                print(images.results[0].altDescription ?? "BEEFY")
         }
     }
 }
