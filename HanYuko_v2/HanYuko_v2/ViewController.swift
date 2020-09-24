@@ -16,6 +16,8 @@ import Alamofire
 
 class ViewController: UITableViewController {
     
+    var imagesStored = [UnsplashImage]()
+    
     let searchController = UISearchController(searchResultsController: nil)
     
     // Font styling attributes
@@ -52,18 +54,33 @@ class ViewController: UITableViewController {
         fetchImages(query: "office")
     }
     
-    func fetchImages(query: String) {
-        let apiKey = "4se24g0iDGD4ZlKTHoh1LVanuCy1CegUCH0_zZlV030"
-        let apiURL = "https://api.unsplash.com/search/photos?query=\(query)&client_id=\(apiKey)"
-        
-        let request = AF.request(apiURL)
-        
-        request.responseJSON { (data) in
-            print(data)
-            // TODO: plug this data into the UnsplashImage struct
-        }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return imagesStored.count
     }
     
-    // JUST DO IT
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+        let imageCell = imagesStored[indexPath.row]
+        cell.textLabel?.text = imageCell.description ?? imageCell.altDescription
+        return cell
+    }
     
+    func fetchImages(query: String) {
+        let apiKey = "4se24g0iDGD4ZlKTHoh1LVanuCy1CegUCH0_zZlV030"
+        let parameters = ["query": query, "client_id": apiKey]
+        let apiURL = "https://api.unsplash.com/search/photos"
+        
+        AF.request(apiURL, parameters: parameters)
+            .validate()
+            .responseDecodable(of: ImagesResponse.self) { response in
+//                debugPrint(response)
+                guard let images = response.value else { return }
+                self.imagesStored = images.results
+                self.tableView.reloadData()
+                
+//                print(images.results[0].id ?? "BEEFY")
+//                print(images.results[0].description ?? "BEEFY")
+//                print(images.results[0].altDescription ?? "BEEFY")
+        }
+    }
 }
