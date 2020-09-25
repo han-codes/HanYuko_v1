@@ -17,6 +17,7 @@ import Alamofire
 class ViewController: UITableViewController, UISearchBarDelegate {
     
     var imagesStored = [UnsplashImage]()
+    let searchController = UISearchController(searchResultsController: nil)
     
     // Font styling attributes
     let largeTitleFont = UIFont(name: "Rubik-Bold", size: 34) ?? UIFont(name: "Arial", size: 34)
@@ -47,15 +48,10 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
         
         // Search bar setup
-        let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
         // Adds search input to navigation area
         navigationItem.searchController = searchController
         
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        fetchImages(query: searchBar.text ?? "")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,6 +65,14 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         return cell
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        fetchImages(query: searchBar.text ?? "")
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.placeholder = ""
+    }
+
     func fetchImages(query: String) {
         let apiKey = "4se24g0iDGD4ZlKTHoh1LVanuCy1CegUCH0_zZlV030"
         let parameters = ["query": query, "client_id": apiKey]
@@ -82,5 +86,8 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                 self.imagesStored = images.results
                 self.tableView.reloadData()
         }
+        
+        searchController.searchBar.placeholder = query
+        
     }
 }
