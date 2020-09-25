@@ -78,6 +78,8 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         let parameters = ["query": query, "client_id": apiKey]
         let apiURL = "https://api.unsplash.com/search/photos"
         
+//        createSpinnerView() TODO: Create/hide spinner when loading
+        
         AF.request(apiURL, parameters: parameters)
             .validate()
             .responseDecodable(of: ImagesResponse.self) { response in
@@ -85,9 +87,18 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                 guard let images = response.value else { return }
                 self.imagesStored = images.results
                 self.tableView.reloadData()
+                
         }
         
         searchController.searchBar.placeholder = query
+    }
+    
+    func createSpinnerView() {
+        let spinnerComponent = SpinnerViewController()
         
+        addChild(spinnerComponent)
+        spinnerComponent.view.frame = view.frame
+        view.addSubview(spinnerComponent.view)
+        spinnerComponent.didMove(toParent: self)
     }
 }
