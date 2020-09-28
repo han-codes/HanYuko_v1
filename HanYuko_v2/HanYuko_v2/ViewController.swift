@@ -18,6 +18,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
     
     var imagesStored = [UnsplashImage]()
     let searchController = UISearchController(searchResultsController: nil)
+    let tableCellHeight: CGFloat = 70
     
     // Font styling attributes
     let largeTitleFont = UIFont(name: "Rubik-Bold", size: 34) ?? UIFont(name: "Arial", size: 34)
@@ -59,10 +60,26 @@ class ViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+        // Cell setup
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! UnsplashImageTableViewCell
         let imageCell = imagesStored[indexPath.row]
-        cell.textLabel?.text = imageCell.description ?? imageCell.altDescription
+        
+        // Cell text
+        let cellDescriptionText = imageCell.description ?? imageCell.altDescription
+        cell.cellLabel?.text = cellDescriptionText
+        
+        // Cell picture
+        let pictureURL = imageCell.urls.sourceImage
+        let pictureData = try! Data(contentsOf: pictureURL)
+        let picture = UIImage(data: pictureData)
+        cell.cellImage.image = picture
+        cell.cellImage.layer.cornerRadius = 10
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableCellHeight
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

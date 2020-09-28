@@ -16,18 +16,20 @@ struct UnsplashImage: Decodable {
     var id: String
     var description: String?
     var altDescription: String?
-//    let user: User
-//    let links: Links
+    let user: User
+    let links: Links
+    let urls: URLs
     
     enum CodingKeys: String, CodingKey {
         case id
         case description
         case altDescription = "alt_description"
-//        case user
-//        case links
+        case user
+        case links
+        case urls
     }
 }
-/*
+
 struct User: Decodable { // Author of the photo
     let username: String
     let name: String
@@ -48,6 +50,14 @@ struct ProfileImage: Decodable {
     }
 }
 
+struct URLs: Decodable {
+    let sourceImage: URL
+    
+    enum CodingKeys: String, CodingKey {
+        case sourceImage = "regular"
+    }
+}
+
 struct Links: Decodable {
     let originalURL: URL // URL for original unsplash page
     
@@ -55,5 +65,5 @@ struct Links: Decodable {
         case originalURL = "html"
     }
 }
-*/
+
 

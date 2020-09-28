@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="xgd-vd-NKn">
@@ -15,13 +20,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" id="bY8-Xi-xI0">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="bY8-Xi-xI0" customClass="UnsplashImageTableViewCell" customModule="HanYuko_v2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bY8-Xi-xI0" id="l5i-4c-Gav">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JD8-6h-GyF">
+                                            <rect key="frame" x="15" y="7" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="IO7-6U-GC9"/>
+                                                <constraint firstAttribute="height" constant="56" id="N3Q-Sx-99f"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikc-Mz-NtW">
+                                            <rect key="frame" x="86" y="24.5" width="265" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="265" id="3X0-xO-b0B"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                            <color key="textColor" red="0.32156862745098036" green="0.65490196078431373" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JD8-6h-GyF" firstAttribute="centerY" secondItem="l5i-4c-Gav" secondAttribute="centerY" id="JHi-0V-FmD"/>
+                                        <constraint firstItem="Ikc-Mz-NtW" firstAttribute="leading" secondItem="JD8-6h-GyF" secondAttribute="trailing" constant="15" id="QhL-ng-Khe"/>
+                                        <constraint firstItem="JD8-6h-GyF" firstAttribute="leading" secondItem="l5i-4c-Gav" secondAttribute="leading" constant="15" id="Roq-xG-acK"/>
+                                        <constraint firstItem="Ikc-Mz-NtW" firstAttribute="centerY" secondItem="l5i-4c-Gav" secondAttribute="centerY" id="u1Z-UU-686"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImage" destination="JD8-6h-GyF" id="9Uh-ka-9Vd"/>
+                                    <outlet property="cellLabel" destination="Ikc-Mz-NtW" id="CdS-Be-zDs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

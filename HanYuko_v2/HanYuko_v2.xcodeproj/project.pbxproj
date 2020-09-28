@@ -22,6 +22,7 @@
 		A515516725101BB700D07A82 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A515516325101BB700D07A82 /* Rubik-Regular.ttf */; };
 		A5251F5325102AE400358D6B /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F5225102AE400358D6B /* UnsplashImage.swift */; };
 		A5251F57251D6F7E00358D6B /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */; };
+		A5251F59252264D000358D6B /* UnsplashImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A515516325101BB700D07A82 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		A5251F5225102AE400358D6B /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
 		A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImageTableViewCell.swift; sourceTree = "<group>"; };
 		AA46BD9EAB8E489A3D32DB0D /* Pods-HanYuko_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2.release.xcconfig"; sourceTree = "<group>"; };
 		C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */,
 				A5251F5225102AE400358D6B /* UnsplashImage.swift */,
 				A515514625101A8500D07A82 /* Main.storyboard */,
+				A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */,
 				A515514925101A8700D07A82 /* Assets.xcassets */,
 				A515514B25101A8700D07A82 /* LaunchScreen.storyboard */,
 				A515514E25101A8700D07A82 /* Info.plist */,
@@ -327,6 +330,7 @@
 			files = (
 				A515514525101A8500D07A82 /* ViewController.swift in Sources */,
 				A5251F5325102AE400358D6B /* UnsplashImage.swift in Sources */,
+				A5251F59252264D000358D6B /* UnsplashImageTableViewCell.swift in Sources */,
 				A515514125101A8500D07A82 /* AppDelegate.swift in Sources */,
 				A515514325101A8500D07A82 /* SceneDelegate.swift in Sources */,
 				A5251F57251D6F7E00358D6B /* SpinnerViewController.swift in Sources */,
