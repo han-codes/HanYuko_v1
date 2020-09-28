@@ -55,6 +55,8 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         
     }
     
+    // MARK: TableView functions
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return imagesStored.count
     }
@@ -81,6 +83,12 @@ class ViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableCellHeight
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "DetailViewSegue", sender: self)
+    }
+    
+    // MARK: Search functions and API call
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         fetchImages(query: searchBar.text ?? "")
@@ -109,6 +117,8 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         
         searchController.searchBar.placeholder = query
     }
+    
+    // MARK: UIIndicator spinner component
     
     func createSpinnerView() {
         let spinnerComponent = SpinnerViewController()
