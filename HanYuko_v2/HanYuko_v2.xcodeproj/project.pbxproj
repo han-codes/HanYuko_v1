@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0ABAC519DA615409732C61A2 /* Pods_HanYuko_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */; };
 		23C4B54953CF2E0A49BC2634 /* Pods_HanYuko_v2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */; };
+		A5153B43252321A800B17712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5153B42252321A800B17712 /* Constants.swift */; };
 		A515514125101A8500D07A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515514025101A8500D07A82 /* AppDelegate.swift */; };
 		A515514325101A8500D07A82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515514225101A8500D07A82 /* SceneDelegate.swift */; };
 		A515514525101A8500D07A82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515514425101A8500D07A82 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		A5251F5325102AE400358D6B /* UnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F5225102AE400358D6B /* UnsplashImage.swift */; };
 		A5251F57251D6F7E00358D6B /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */; };
 		A5251F59252264D000358D6B /* UnsplashImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */; };
+		A5251F5B252290A600358D6B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5251F5A252290A600358D6B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* Begin PBXFileReference section */
 		82E67FCB75FB81E9090AF891 /* Pods-HanYuko_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2.debug.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2.debug.xcconfig"; sourceTree = "<group>"; };
 		A488BAEE66AB6EDE376A0C86 /* Pods-HanYuko_v2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2Tests.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2Tests/Pods-HanYuko_v2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A5153B42252321A800B17712 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A515513D25101A8500D07A82 /* HanYuko_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanYuko_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A515514025101A8500D07A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A515514225101A8500D07A82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		A5251F5225102AE400358D6B /* UnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImage.swift; sourceTree = "<group>"; };
 		A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImageTableViewCell.swift; sourceTree = "<group>"; };
+		A5251F5A252290A600358D6B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AA46BD9EAB8E489A3D32DB0D /* Pods-HanYuko_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2.release.xcconfig"; sourceTree = "<group>"; };
 		C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +122,8 @@
 				A515514025101A8500D07A82 /* AppDelegate.swift */,
 				A515514225101A8500D07A82 /* SceneDelegate.swift */,
 				A515514425101A8500D07A82 /* ViewController.swift */,
+				A5153B42252321A800B17712 /* Constants.swift */,
+				A5251F5A252290A600358D6B /* DetailViewController.swift */,
 				A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */,
 				A5251F5225102AE400358D6B /* UnsplashImage.swift */,
 				A515514625101A8500D07A82 /* Main.storyboard */,
@@ -334,6 +340,8 @@
 				A515514125101A8500D07A82 /* AppDelegate.swift in Sources */,
 				A515514325101A8500D07A82 /* SceneDelegate.swift in Sources */,
 				A5251F57251D6F7E00358D6B /* SpinnerViewController.swift in Sources */,
+				A5251F5B252290A600358D6B /* DetailViewController.swift in Sources */,
+				A5153B43252321A800B17712 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

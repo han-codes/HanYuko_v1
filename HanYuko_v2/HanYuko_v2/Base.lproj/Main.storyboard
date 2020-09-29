@@ -12,7 +12,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="xgd-vd-NKn">
             <objects>
                 <tableViewController id="vNp-uX-42h" customClass="ViewController" customModule="HanYuko_v2" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="vNp-uX-42h" id="HE0-bJ-Pnx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ijO-N3-FqE"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="ijO-N3-FqE"/>
                     <connections>
                         <segue destination="vE1-6h-UQ1" kind="show" identifier="DetailViewSegue" id="MPk-rV-kgj"/>
                     </connections>
@@ -77,8 +77,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ksg-0X-2T8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UNV-C7-9RO">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UNV-C7-9RO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -90,21 +90,45 @@
             </objects>
             <point key="canvasLocation" x="234.78260869565219" y="247.76785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="LjR-kf-D2R">
             <objects>
-                <viewController id="vE1-6h-UQ1" sceneMemberID="viewController">
+                <viewController id="vE1-6h-UQ1" customClass="DetailViewController" customModule="HanYuko_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mAw-PS-c3R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UbH-fx-8Wj">
+                                <rect key="frame" x="51.5" y="219.5" width="311" height="457"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="457" id="EcW-yy-qyI"/>
+                                    <constraint firstAttribute="width" constant="311" id="oAK-um-1Q4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQD-B4-z6i">
+                                <rect key="frame" x="68" y="639" width="278" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UbH-fx-8Wj" firstAttribute="centerX" secondItem="mAw-PS-c3R" secondAttribute="centerX" id="OEM-8D-Fqs"/>
+                            <constraint firstItem="UbH-fx-8Wj" firstAttribute="centerY" secondItem="mAw-PS-c3R" secondAttribute="centerY" id="mit-jB-6et"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DXj-eE-cWq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ver-qJ-9Jm"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="Ver-qJ-9Jm"/>
+                    <connections>
+                        <outlet property="detailViewDescription" destination="SQD-B4-z6i" id="BC4-Na-VHW"/>
+                        <outlet property="detailViewImage" destination="UbH-fx-8Wj" id="If3-9j-2iY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDk-Dz-Yan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="248"/>
+            <point key="canvasLocation" x="2021.7391304347827" y="247.76785714285714"/>
         </scene>
     </scenes>
 </document>
