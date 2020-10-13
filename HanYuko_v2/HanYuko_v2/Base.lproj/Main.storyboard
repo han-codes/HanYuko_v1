@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Rubik-Bold.ttf">
+            <string>Rubik-Bold</string>
+        </array>
         <array key="Rubik-Regular.ttf">
             <string>Rubik-Regular</string>
         </array>
@@ -90,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="234.78260869565219" y="247.76785714285714"/>
         </scene>
-        <!--Title-->
+        <!-- -->
         <scene sceneID="LjR-kf-D2R">
             <objects>
                 <viewController id="vE1-6h-UQ1" customClass="DetailViewController" customModule="HanYuko_v2" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,32 +101,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UbH-fx-8Wj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UbH-fx-8Wj">
                                 <rect key="frame" x="51.5" y="219.5" width="311" height="457"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="457" id="EcW-yy-qyI"/>
                                     <constraint firstAttribute="width" constant="311" id="oAK-um-1Q4"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQD-B4-z6i">
-                                <rect key="frame" x="68" y="639" width="278" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
-                                <nil key="textColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Lg-A0-qpT">
+                                <rect key="frame" x="51.5" y="606.5" width="311" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="gTw-kp-1fU"/>
+                                    <constraint firstAttribute="width" constant="311" id="vou-4h-w5H"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="SQD-B4-z6i">
+                                <rect key="frame" x="52" y="638.5" width="310" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="Y2g-L8-Jap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SQD-B4-z6i" firstAttribute="bottom" secondItem="3Lg-A0-qpT" secondAttribute="bottom" constant="-20" id="9M1-Py-BhP"/>
                             <constraint firstItem="UbH-fx-8Wj" firstAttribute="centerX" secondItem="mAw-PS-c3R" secondAttribute="centerX" id="OEM-8D-Fqs"/>
+                            <constraint firstItem="SQD-B4-z6i" firstAttribute="centerX" secondItem="3Lg-A0-qpT" secondAttribute="centerX" id="YrX-t6-Bk9"/>
+                            <constraint firstItem="3Lg-A0-qpT" firstAttribute="bottom" secondItem="UbH-fx-8Wj" secondAttribute="bottom" id="dq9-7N-9sV"/>
                             <constraint firstItem="UbH-fx-8Wj" firstAttribute="centerY" secondItem="mAw-PS-c3R" secondAttribute="centerY" id="mit-jB-6et"/>
+                            <constraint firstItem="3Lg-A0-qpT" firstAttribute="centerX" secondItem="mAw-PS-c3R" secondAttribute="centerX" id="nG4-D2-Wgt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DXj-eE-cWq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="Ver-qJ-9Jm"/>
+                    <navigationItem key="navigationItem" title=" " prompt=" " largeTitleDisplayMode="never" id="Ver-qJ-9Jm">
+                        <barButtonItem key="backBarButtonItem" title=" " id="1o8-22-bNW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailViewDescription" destination="SQD-B4-z6i" id="BC4-Na-VHW"/>
                         <outlet property="detailViewImage" destination="UbH-fx-8Wj" id="If3-9j-2iY"/>
+                        <outlet property="gradientBg" destination="3Lg-A0-qpT" id="crl-tW-g1Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDk-Dz-Yan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

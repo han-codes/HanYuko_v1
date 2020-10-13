@@ -22,6 +22,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                 
         // Set the title of the home screen
         title = "HanYuko Images"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         // The BEEFY title
         let largeTitleTextAttributes: [NSAttributedString.Key: Any] = [
@@ -55,7 +56,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         let imageCell = imagesStored[indexPath.row]
         
         // Cell text
-        let cellDescriptionText = imageCell.description ?? imageCell.altDescription
+        let cellDescriptionText = imageCell.description ?? imageCell.altDescription ?? "(no description)"
         cell.cellLabel?.text = cellDescriptionText
         
         // Cell picture
@@ -87,7 +88,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                     destination.detailImage = selectedImg
                 }
                 
-                destination.detailText = imagesStored[indexPath.row].description ?? imagesStored[indexPath.row].altDescription ?? ""
+                destination.detailText = imagesStored[indexPath.row].description ?? imagesStored[indexPath.row].altDescription ?? "(no description)"
             }
         }
     }
