@@ -77,6 +77,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         self.performSegue(withIdentifier: "DetailViewSegue", sender: self)
     }
     
+    // MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DetailViewSegue" {
             if let indexPath = self.tableView.indexPathForSelectedRow {

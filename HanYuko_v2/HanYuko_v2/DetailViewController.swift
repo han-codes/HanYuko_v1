@@ -49,5 +49,26 @@ class DetailViewController: UIViewController {
         // bring z-depth of description to front
         detailViewDescription.bringSubviewToFront(view)
         
+        // long press on image logic -- TODO for future v2, but keeping code for reference
+        /* let tapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressHappened))
+        detailViewImage.isUserInteractionEnabled = true
+        detailViewImage.addGestureRecognizer(tapGestureRecognizer) */
+        
+    }
+    
+    /* @objc func longPressHappened() {
+        let vc = ModalViewController()
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
+    } */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalSegue" {
+            let currentImg = detailImage
+            
+            let destination = segue.destination as! ModalViewController
+            destination.modalImage = currentImg
+        }
     }
 }
