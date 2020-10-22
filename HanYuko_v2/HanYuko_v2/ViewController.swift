@@ -117,6 +117,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                 //debugPrint(response)
                 guard let images = response.value else { return }
                 self.imagesStored = images.results
+//                print(self.imagesStored) // TODO: fix storing only first page
                 self.tableView.reloadData()
                 
         }
