@@ -110,7 +110,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         let parameters = ["query": query, "client_id": apiKey]
         let apiURL = "https://api.unsplash.com/search/photos"
         
-//        createSpinnerView() TODO: Create/hide spinner when loading
+//        createSpinnerView()
         
         AF.request(apiURL, parameters: parameters)
             .validate()
@@ -118,7 +118,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                 //debugPrint(response)
                 guard let images = response.value else { return }
                 self.imagesStored = images.results
-//                print(self.imagesStored) // TODO: fix storing only first page
+//                print(self.imagesStored) // TODO: - TODO fix storing only first page
                 self.tableView.reloadData()
                 
         }

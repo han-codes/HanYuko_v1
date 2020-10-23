@@ -20,6 +20,7 @@ class SpinnerViewController: UIViewController {
         spinner.hidesWhenStopped = true
         spinner.startAnimating()
         view.addSubview(spinner)
+        spinner.bringSubviewToFront(view)
         
         spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
