@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import FirebaseCrashlytics
 
 class ViewController: UITableViewController, UISearchBarDelegate {
     
