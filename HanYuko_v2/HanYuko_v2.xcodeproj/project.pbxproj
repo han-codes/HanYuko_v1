@@ -51,7 +51,7 @@
 		A515514725101A8500D07A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A515514925101A8700D07A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A515514C25101A8700D07A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A515514E25101A8700D07A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A515514E25101A8700D07A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "HanYuko_v2/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		A515515325101A8700D07A82 /* HanYuko_v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HanYuko_v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A515515725101A8700D07A82 /* HanYuko_v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanYuko_v2Tests.swift; sourceTree = "<group>"; };
 		A515515925101A8700D07A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashImageTableViewCell.swift; sourceTree = "<group>"; };
 		A5251F5A252290A600358D6B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A554683125366DF4005843B2 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		A554683325424081005843B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A554683325424081005843B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "HanYuko_v2/Firebase/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AA46BD9EAB8E489A3D32DB0D /* Pods-HanYuko_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYuko_v2.release.xcconfig"; path = "Target Support Files/Pods-HanYuko_v2/Pods-HanYuko_v2.release.xcconfig"; sourceTree = "<group>"; };
 		C6D0DD557F73850268690B88 /* Pods_HanYuko_v2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81790ABDC78D7CE934D2B15 /* Pods_HanYuko_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYuko_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,20 +124,13 @@
 		A515513F25101A8500D07A82 /* HanYuko_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				A515514025101A8500D07A82 /* AppDelegate.swift */,
-				A515514225101A8500D07A82 /* SceneDelegate.swift */,
-				A515514425101A8500D07A82 /* ViewController.swift */,
-				A5153B42252321A800B17712 /* Constants.swift */,
-				A5251F5A252290A600358D6B /* DetailViewController.swift */,
-				A554683125366DF4005843B2 /* ModalViewController.swift */,
-				A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */,
-				A5251F5225102AE400358D6B /* UnsplashImage.swift */,
-				A515514625101A8500D07A82 /* Main.storyboard */,
-				A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */,
-				A515514925101A8700D07A82 /* Assets.xcassets */,
-				A515514B25101A8700D07A82 /* LaunchScreen.storyboard */,
-				A515514E25101A8700D07A82 /* Info.plist */,
-				A554683325424081005843B2 /* GoogleService-Info.plist */,
+				F3F7F2FF25438E07008348D0 /* Utility */,
+				F3F7F2FD25438DF9008348D0 /* Models */,
+				F3F7F30125438E4E008348D0 /* Views */,
+				F3F7F2FE25438E01008348D0 /* View Controllers */,
+				F3F7F30025438E1C008348D0 /* Firebase */,
+				F3F7F2FB25438DE9008348D0 /* Resources */,
+				F3F7F2FC25438DED008348D0 /* Supporting Files */,
 			);
 			path = HanYuko_v2;
 			sourceTree = "<group>";
@@ -158,6 +151,77 @@
 				A515516325101BB700D07A82 /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F3F7F2FB25438DE9008348D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A515514925101A8700D07A82 /* Assets.xcassets */,
+				A515514B25101A8700D07A82 /* LaunchScreen.storyboard */,
+				A515514025101A8500D07A82 /* AppDelegate.swift */,
+				A515514225101A8500D07A82 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3F7F2FC25438DED008348D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A515514E25101A8700D07A82 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3F7F2FD25438DF9008348D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5251F5225102AE400358D6B /* UnsplashImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3F7F2FE25438E01008348D0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A515514425101A8500D07A82 /* ViewController.swift */,
+				A5251F5A252290A600358D6B /* DetailViewController.swift */,
+				A554683125366DF4005843B2 /* ModalViewController.swift */,
+				A5251F56251D6F7E00358D6B /* SpinnerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F3F7F2FF25438E07008348D0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F3F7F30225438E67008348D0 /* Constants */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F3F7F30025438E1C008348D0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				A554683325424081005843B2 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F3F7F30125438E4E008348D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A515514625101A8500D07A82 /* Main.storyboard */,
+				A5251F58252264D000358D6B /* UnsplashImageTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3F7F30225438E67008348D0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A5153B42252321A800B17712 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		F9049171C2CA2F36B1D6E489 /* Frameworks */ = {
@@ -463,6 +527,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "HanYuko_v2/Supporting Files/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "HanYuko_v2/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -517,6 +583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "HanYuko_v2/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -532,16 +599,17 @@
 			baseConfigurationReference = 82E67FCB75FB81E9090AF891 /* Pods-HanYuko_v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 889DPPF4QB;
-				INFOPLIST_FILE = HanYuko_v2/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "HanYuko_v2/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jacobpernell.HanYuko-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -555,7 +623,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 889DPPF4QB;
-				INFOPLIST_FILE = HanYuko_v2/Info.plist;
+				INFOPLIST_FILE = "HanYuko_v2/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
